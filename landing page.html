@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="display: block;  margin: 0;    /* remove browser default margin */
+    padding: 0;
+    font-family: Arial, sans-serif;">
+    
+<h1 id="welcomeMessage"></h1>
+
+<script>
+  let username = localStorage.getItem("username");
+  if (!username) {
+    // prevent direct access without login
+    window.location.href = "index.html";
+  } else {
+    document.getElementById("welcomeMessage").innerText = "Welcome, " + username + "!";
+  }
+</script>
+
+    <header>
+        <h1>RIOT GAMES</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#intro">Fav Agent</a></li>
+            <li><a href="#guns">Fave Gun Skins</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+    </header>
+    <div class="about" id="home">
+        <div class="intro-text">
+            <h1>VALORANT</h1>
+            <p>DEFY THE LIMITS
+                Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend
+                your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think
+                faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as
+                well as Deathmatch and Spike Rush.</p>
+
+        </div>
+        <div class="intro-image">
+
+            <img src="valobg.png" alt="">
+        </div>
+    </div>
+    <div class="intro" id="intro">
+        <div class="agents">
+            <div class="agent vyse" style="background-image: url('last.webp'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <h2>Vyse</h2>
+                <p>
+                    Metallic mastermind Vyse unleashes her liquid metal abilities with unmatched precision, manipulating the battlefield to her advantage. She can create deadly traps, ensnaring enemies and leaving them vulnerable while controlling the flow of combat. Through her cunning strategies and ruthless manipulation, she forces all who dare to oppose her to rethink their every move, instilling fear and uncertainty with each calculated strike. Her presence on the battlefield is not just powerful—it is psychological, breaking the morale of her enemies before they even have a chance to fight back. Every engagement becomes a test of wits and skill, as Vyse bends the rules of combat to her will, turning chaos into her ultimate weapon.
+                </p>
+            </div>
+            <div class="agent omen" style="background-image: url('omen.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                <h2>Omen</h2>
+                <p>
+                    A phantom of a memory, Omen moves silently through the shadows, his presence barely perceptible yet unnervingly constant. With his ability to shroud the battlefield in darkness and render enemies blind, he disrupts their focus and forces them to question every corner and corridor. Teleporting unpredictably across the field, he appears where least expected, turning every engagement into a test of nerves and awareness. As his foes scramble to anticipate his next move, paranoia creeps in, slowing their reactions and clouding their judgment. Omen is not just a fighter—he is an embodiment of fear itself, a mysterious force that manipulates both sight and mind. Every encounter with him is a psychological game, where survival depends on anticipation, strategy, and the courage to face the unseen.
+                </p>
+            </div>
+        </div>
+
+        <div class="fave-guns" id="guns">
+            <h1>Favorite Gun Skins</h1>
+            <div class="gun-list">
+              <div class="gun-item">
+                <img src="Kuro_Sheriff-removebg-preview.png" alt="">
+                <h1>Kuro Sheriff</h1>
+            </div>
+              <div class="gun-item">
+           
+                <img src="Prelude Vandal.webp" alt="">
+                <h1>Prelude Vandal</h1>
+            </div>
+              <div class="gun-item">
+           
+                <img src="kuro vandal.png" alt="">
+                <h1>Kuro Vandal</h1>
+            </div>
+              <div class="gun-item">
+           
+                <img src="Reaver Ghost.webp" alt="">
+                <h1>Reaver Ghost</h1></div>
+            </div>
+          </div>
+          
+          
+</body>
+<footer>
+    <div class="paa">
+        <div class="social-links">
+            <a href="https://twitter.com/" target="_blank">
+                <img src="x.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="Instagram-Logo-History-removebg-preview.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://discord.com/" target="_blank">
+                <img src="dc.png" alt="Discord" class="social-icon">
+            </a>
+        </div>
+        <img src="riot.png" alt="Riot Logo" class="footer-logo">
+        <p>@2020-2025 Riot Games, Inc. RIOTGAMES, VALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games Inc</p>
+    </div>
+</footer>
+
+</html>
